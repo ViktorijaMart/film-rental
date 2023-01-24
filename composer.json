@@ -1,0 +1,15 @@
+{
+    "name": "vikto/film-rental-project",
+    "description": "PHP Film Rental Project",
+    "autoload": {
+        "psr-4": {
+            "Vikto\\FilmRentalProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Viktorija Martinaityte"
+        }
+    ],
+    "require": {}
+}
