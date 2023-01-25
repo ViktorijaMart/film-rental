@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Vikto\CarProject\Framework;
+namespace Vikto\FilmRentalProject\Framework;
 
 class DbConnection
 {
