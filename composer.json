@@ -11,5 +11,7 @@
             "name": "Viktorija Martinaityte"
         }
     ],
-    "require": {}
+    "require": {
+        "smarty/smarty": "^4.3"
+    }
 }
