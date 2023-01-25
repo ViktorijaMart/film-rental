@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#actor_info,
+#filmography {
+    width: 45%;
+    padding: 20px;
+}
+
+#actor_info > img {
+    width: 60%;
+    height: auto;
+}
+
+.full-name {
+    margin: 20px 0;
+    font-size: 30px;
+}

@@ -26,7 +26,7 @@ class Router
                 $actorController->getAll();
                 break;
             case '/actorInfo':
-                echo "This is actor's info";
+                $actorController->getById();
                 break;
             case '/filmInfo':
                 echo "This is film's info";

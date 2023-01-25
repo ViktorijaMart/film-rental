@@ -13,11 +13,27 @@ class ActorController
 
     public function getAll()
     {
-        $actorRepository = $this->container->get('Vikto\FilmRentalProject\Repository\ActorRepository');
+        $actorRepository = $this->getActorRepository();
         $actors = $actorRepository->getAllActors();
 
         $smarty = new \Smarty();
         $smarty->assign(['actors' => $actors]);
         $smarty->display(__DIR__ . '/../View/homePage.tpl');
+    }
+
+    public function getById()
+    {
+        $id = $_POST['id'];
+        $actorRepository = $this->getActorRepository();
+        $actor = $actorRepository->getById($id)[0];
+
+        $smarty = new \Smarty();
+        $smarty->assign(['actor' => $actor]);
+        $smarty->display(__DIR__ . '/../View/actorInfo.tpl');
+    }
+
+    private function getActorRepository()
+    {
+        return $this->container->get('Vikto\FilmRentalProject\Repository\ActorRepository');
     }
 }

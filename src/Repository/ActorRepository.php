@@ -21,4 +21,13 @@ class ActorRepository
 
         return $statement->fetchAll(\PDO::FETCH_ASSOC);
     }
+
+    public function getById(string $id): array
+    {
+        $conn = $this->db();
+        $statement = $conn->prepare("SELECT first_name, last_name FROM actor WHERE id=$id");
+        $statement->execute();
+
+        return $statement->fetchAll(\PDO::FETCH_ASSOC);
+    }
 }
