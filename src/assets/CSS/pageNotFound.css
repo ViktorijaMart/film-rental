@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    text-align: center;
+}
+
+.error > h1 {
+    color: red;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.error > h2 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.error > a {
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    cursor: pointer;
+}
