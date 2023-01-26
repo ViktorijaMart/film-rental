@@ -51,7 +51,7 @@ button {
     margin-top: 10px;
 }
 
-form > button {
+.actor-form {
     background-color: transparent;
     border: none;
 }

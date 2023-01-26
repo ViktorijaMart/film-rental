@@ -23,7 +23,7 @@
                 <img src="https://hccryde.syd.catholic.edu.au/wp-content/uploads/sites/148/2019/05/Person-icon.jpg">
                 <form method="post" action="/FilmRentalProject/actorInfo">
                     <input type="hidden" name="id" value={$actor.id}>
-                    <button type="submit">
+                    <button type="submit" class="actor-form">
                         <p>{$actor.first_name}</p>
                         <p>{$actor.last_name}</p>
                     </button>
