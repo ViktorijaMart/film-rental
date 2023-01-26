@@ -17,7 +17,7 @@ class ActorController
         $actorService = $this->container->get('Vikto\FilmRentalProject\Service\ActorService');
         $actors = $actorRepository->getAllActors();
 
-        if (!empty($_POST)) {
+        if (!empty($_POST['actorName'])) {
             $input = strtoupper($_POST['actorName']);
             $actors = $actorService->findActors($actors, $input);
             $_POST = array();

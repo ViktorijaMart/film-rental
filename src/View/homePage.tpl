@@ -16,13 +16,6 @@
     <div class="search">
         <h2>Actors</h2>
         <form method="post" action="/FilmRentalProject/">
-            <select name="sort" >
-                <option>Sort</option>
-                <option value="aToZ">A to Z</option>
-                <option value="zToA">Z to A</option>
-            </select>
-        </form>
-        <form method="post" action="/FilmRentalProject/">
             <input type="text" name="actorName" placeholder="Search actors">
             <button type="submit">Search</button>
         </form>
