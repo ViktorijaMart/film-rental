@@ -1,3 +1,5 @@
+// https://webdesign.tutsplus.com/tutorials/pagination-with-vanilla-javascript--cms-41896
+
 const paginationNumbers = document.getElementById("pagination-numbers");
 const paginatedList = document.getElementById("paginated-list");
 const listItems = paginatedList.querySelectorAll("div");
