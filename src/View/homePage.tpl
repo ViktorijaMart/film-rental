@@ -18,7 +18,7 @@
         <h2>Actors</h2>
         <form method="post" action="/FilmRentalProject/">
             <input type="text" name="actorName" placeholder="Search actors">
-            <button type="submit">Search</button>
+            <button type="submit" class="search-button">Search</button>
         </form>
     </div>
     <div class="actors" id="paginated-list">

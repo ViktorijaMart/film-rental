@@ -40,6 +40,9 @@ main {
 }
 
 button {
-    padding: 4px 8px;
+    padding: 6px 8px;
+    background-color: #7a8596;
+    border: none;
+    color: white;
 }
 

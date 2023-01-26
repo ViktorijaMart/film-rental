@@ -8,10 +8,6 @@ input {
     margin-right: 10px;
 }
 
-button {
-    padding: 4px 8px;
-}
-
 .search {
     margin: 20px 60px 0px;
     display: flex;
@@ -21,6 +17,14 @@ button {
 
 .search > h2 {
     font-size: 40px;
+    color: #3b464b;
+}
+
+.search-button {
+    background-color: #7a8596;
+    border: none;
+    color: white;
+    padding: 6px 8px;
 }
 
 .actors {
@@ -82,7 +86,6 @@ button > p {
     cursor: pointer;
     height: 2.5rem;
     width: 2.5rem;
-    border-radius: .2rem;
 }
 .pagination-number:hover,
 .pagination-button:not(.disabled):hover {

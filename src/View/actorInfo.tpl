@@ -29,7 +29,7 @@
                     <p class="film-description">{$film.description}</p>
                     <form method="post" action="/FilmRentalProject/filmInfo">
                         <input type="hidden" name="filmId" value={$film.id}>
-                        <button type="submit">Read More</button>
+                        <button type="submit" class="filmography-button">Read More</button>
                     </form>
                 </div>
             {/foreach}
