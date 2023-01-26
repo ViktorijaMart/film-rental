@@ -30,4 +30,23 @@ class ActorRepository
 
         return $statement->fetchAll(\PDO::FETCH_ASSOC);
     }
+
+    public function getByFilmId(string $filmId): array
+    {
+        $conn = $this->db();
+        $statement = $conn->prepare("
+            SELECT
+                a.first_name,
+                a.last_name
+            FROM
+                actor a
+            LEFT JOIN 
+                film_actor fa on a.id = fa.actor_id
+            WHERE 
+                fa.film_id = $filmId
+        ");
+        $statement->execute();
+
+        return $statement->fetchAll(\PDO::FETCH_ASSOC);
+    }
 }

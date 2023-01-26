@@ -18,6 +18,7 @@ class Router
          */
 
         $actorController = $this->container->get('Vikto\FilmRentalProject\Controller\ActorController');
+        $filmController = $this->container->get('Vikto\FilmRentalProject\Controller\FilmController');
         $pageNotFoundController = $this->container->get('Vikto\FilmRentalProject\Controller\PageNotFoundController');
 
         switch ($request)
@@ -29,7 +30,7 @@ class Router
                 $actorController->getById();
                 break;
             case '/filmInfo':
-                echo "This is film's info";
+                $filmController->getFilmById();
                 break;
             default:
                 $pageNotFoundController->display();
