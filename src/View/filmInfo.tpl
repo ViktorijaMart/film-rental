@@ -43,7 +43,7 @@
                     <p>ONLY {$filmInfo.rental_rate} &euro;</p>
                     <p>RENT</p>
                 </div>
-                <p class="includes">Includes: {$filmInfo.special_features}</p>
+                <p class="includes">Includes: {preg_replace('/,/', ', ', $filmInfo.special_features)}</p>
             </button>
 
         </div>
