@@ -36,6 +36,7 @@ class ActorRepository
         $conn = $this->db();
         $statement = $conn->prepare("
             SELECT
+                a.id,
                 a.first_name,
                 a.last_name
             FROM
