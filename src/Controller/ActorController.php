@@ -27,8 +27,11 @@ class ActorController
         $actorRepository = $this->getActorRepository();
         $actor = $actorRepository->getById($id)[0];
 
+        $filmRepository = $this->container->get('Vikto\FilmRentalProject\Repository\FilmRepository');
+        $films = $filmRepository->getFilmsByActor($id);
+
         $smarty = new \Smarty();
-        $smarty->assign(['actor' => $actor]);
+        $smarty->assign(['actor' => $actor, 'films' => $films]);
         $smarty->display(__DIR__ . '/../View/actorInfo.tpl');
     }
 

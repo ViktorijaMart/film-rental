@@ -24,3 +24,22 @@ main {
     margin: 20px 0;
     font-size: 30px;
 }
+
+.filmography {
+    margin-bottom: 30px;
+}
+
+.film {
+    margin-bottom: 20px;
+}
+
+.film-title,
+.film-year,
+.film-description {
+    margin-bottom: 6px;
+}
+
+button {
+    padding: 4px 8px;
+}
+

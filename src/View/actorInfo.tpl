@@ -19,7 +19,20 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos facilis impedit incidunt laudantium, magni omnis quod reiciendis reprehenderit tenetur voluptatibus! Culpa cum dolorem ea earum et hic nesciunt nihil quae quia repellendus. Laboriosam nulla officiis vitae. Aperiam consectetur cum eaque, ipsa molestias nobis officiis optio possimus repudiandae vel voluptatem voluptates?</p>
     </div>
     <div id="filmography">
-        <h2>Filmography</h2>
+        <h2 class="filmography">Filmography</h2>
+        <div class="films">
+            {foreach $films as $film}
+                <div class="film">
+                    <h3 class="film-title">{$film.title}</h3>
+                    <h4 class="film-year">{$film.release_year}</h4>
+                    <p class="film-description">{$film.description}</p>
+                    <form method="post" action="/FilmRentalProject/filmInfo">
+                        <input type="hidden" name="filmId" value={$film.id}>
+                        <button type="submit">Read More</button>
+                    </form>
+                </div>
+            {/foreach}
+        </div>
     </div>
 </main>
 {include file="./footer.tpl" title="Footer"}
