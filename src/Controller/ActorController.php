@@ -14,7 +14,14 @@ class ActorController
     public function getAll()
     {
         $actorRepository = $this->getActorRepository();
+        $actorService = $this->container->get('Vikto\FilmRentalProject\Service\ActorService');
         $actors = $actorRepository->getAllActors();
+
+        if (!empty($_POST)) {
+            $input = strtoupper($_POST['actorName']);
+            $actors = $actorService->findActors($actors, $input);
+            $_POST = array();
+        }
 
         $smarty = new \Smarty();
         $smarty->assign(['actors' => $actors]);

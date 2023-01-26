@@ -12,8 +12,8 @@
 <main>
     <div class="search">
         <h2>Actors</h2>
-        <form>
-            <input type="text" placeholder="Search actors">
+        <form method="post" action="/FilmRentalProject/">
+            <input type="text" name="actorName" placeholder="Search actors">
             <button type="submit">Search</button>
         </form>
     </div>
