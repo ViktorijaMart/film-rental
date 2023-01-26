@@ -9,6 +9,7 @@
 </head>
 <body>
 {include file='./header.tpl' title='Header'}
+{include file='./navigation.tpl' title='Navigation'}
 <main>
     <div class="error">
         <img src="https://static.thenounproject.com/png/1527904-200.png">

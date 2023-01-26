@@ -9,6 +9,7 @@
 </head>
 <body>
 {include file='./header.tpl' title='Header'}
+{include file='./navigation.tpl' title='Navigation'}
 <main>
     <div id="actor_info">
         <img src="https://hccryde.syd.catholic.edu.au/wp-content/uploads/sites/148/2019/05/Person-icon.jpg">

@@ -9,6 +9,7 @@
 </head>
 <body>
 {include file='./header.tpl' title='Header'}
+{include file='./navigation.tpl' title='Navigation'}
 <main>
     <div id="film-info">
         <img class="film-poster" src="./src/assets/img/Poster.png">

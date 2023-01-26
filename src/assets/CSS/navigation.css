@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+    width: 100%;
+    background-color: #7a8596;
+    height: 40px;
+}
+
+.top-nav-div {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    border-right: 1px solid black;
+}
+
+.top-nav-a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
