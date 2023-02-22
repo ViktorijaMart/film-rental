@@ -20,4 +20,6 @@ I also had so much fun displaying the fetched data and writing the CSS to make i
 
 - PHP
 - Smarty
+- CSS
+- JavaScript
 - We used data from a MySQL database we created previously.
